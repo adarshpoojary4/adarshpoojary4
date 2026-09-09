@@ -1,5 +1,31 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" width="100%" /> </p>
+name: Generate Snake Animation
 
-⚙️ This 3D skyline / snake animation needs a one-time GitHub Actions setup (I explain below — takes 2 minutes).
+on:
+  schedule:
+    - cron: "0 0 * * *"     # runs once a day
+  workflow_dispatch: {}      # lets you run it manually from the Actions tab
+  push:
+    branches:
+      - main                # regenerate whenever you push to main
 
-<!-- ================= 3D WAVE BANNER (BOTTOM) ================= --> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,50:2c5364,100:0f2027&height=120&section=footer" width="100%"/> <p align="center"> <i>⭐️ Thanks for visiting my profile — feel free to explore my repos and connect!</i> </p>
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: YOUR_USERNAME
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push snake svg to the "output" branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
