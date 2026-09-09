@@ -1,1 +1,5 @@
-<p align="center"> <img src="https://skillicons.dev/icons?i=py,cpp,pytorch,tensorflow,sklearn,jupyter,git,github,vscode,linux,mysql,docker&theme=dark" /> </p> <p align="center"> <img src="https://img.shields.io/badge/🤗%20HuggingFace-FFD21E?style=for-the-badge" /> <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" /> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" /> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" width="100%" /> </p>
+
+⚙️ This 3D skyline / snake animation needs a one-time GitHub Actions setup (I explain below — takes 2 minutes).
+
+<!-- ================= 3D WAVE BANNER (BOTTOM) ================= --> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,50:2c5364,100:0f2027&height=120&section=footer" width="100%"/> <p align="center"> <i>⭐️ Thanks for visiting my profile — feel free to explore my repos and connect!</i> </p>
